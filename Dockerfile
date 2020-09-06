@@ -1,7 +1,7 @@
 FROM ubuntu:18.04
 
 RUN apt-get update \ 
-&&    apt-get install -y wget gnupg
+&&    apt-get install -y wget gnupg libssl1.0-dev
 
 COPY install-packages.sh .
 RUN ./install-packages.sh
