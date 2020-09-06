@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 docker run -it \
    --net=host \
    --device=/dev/dri/card0:/dev/dri/card0 \
@@ -9,4 +9,4 @@ docker run -it \
    --device=/dev/snd/seq:/dev/snd/seq \
    --env="DISPLAY" --env="QT_X11_NO_MITSHM=1" --env="QT_GRAPHICSSYSTEM='native'" \
    --ipc host \
-   --volume="$HOME/.Xauthority:/root/.Xauthority:rw" bluecherry-client
+   --volume="$HOME/.Xauthority:/root/.Xauthority:rw" bluecherrydvr/bluecherry-client
