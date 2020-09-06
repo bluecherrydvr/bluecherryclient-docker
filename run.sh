@@ -1,4 +1,7 @@
 #!/bin/sh
+
+xhost +
+
 docker run -it \
    --net=host \
    --device=/dev/dri/card0:/dev/dri/card0 \
